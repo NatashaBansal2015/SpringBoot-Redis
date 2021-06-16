@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3ba707e1-7518-4b99-9ee4-3eb6d2669d79",
+		"name": "redis-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Redis-cache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/get?key=user_1202",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "user_1202"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/delete?key=user_*2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "user_*2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
